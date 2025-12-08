@@ -1,0 +1,34 @@
+@keyframes gakuburu{
+    50%{
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
+}
+
+.loading{
+    position: fixed;
+    /*z-indexはどれが手前に来るか、どれが奥に行くかを設定。今999は最前面を指す */
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    /*どれくらいの時間で、どんな速度で動かすかを設定 */
+    transition: transform ease-in 0.5s;
+
+    > span{
+        animation: gakuburu 0.2s infinite;
+    }
+
+    &.isActive{
+        /*下から上へスライドさせる */
+        transform: translateY(-100%);
+    }
+}
