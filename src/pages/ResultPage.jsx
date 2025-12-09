@@ -3,7 +3,6 @@ import { PATH } from "../const";
 import Result from "../component/Result/Result";
 import Loading from "../component/Loading/Loading";
 import { useEffect, useState } from "react";
-import Button from "../component/Button/Button";
 
 export default function ResultPage() {
   const [active, setActive] = useState(false);
@@ -22,12 +21,7 @@ export default function ResultPage() {
       <Result maxQuizLen={maxQuizLen} correctNum={correctNum}/>
       <br/>
       <Link to={PATH.HOME}>再度チャレンジする！！</Link>
-      <Button onClick={() => navigation(PATH.HOME)}>
-        合格
-      </Button>
     </div>
   )
 }
 
-// 流れ
-// 1 

@@ -18,23 +18,7 @@ const quizData = [
         question: "私の好きなサッカー選手はだれ？",
         options: ["メッシ", "ネイマール", "スアレス", "イニエスタ", "ソンフンミン"],
         answerIndex: 4
-    },
-    {
-        question: "私の好きなサッカー選手はだれ？",
-        options: ["メッシ", "ネイマール", "スアレス", "イニエスタ", "ソンフンミン"],
-        answerIndex: 4
-    },
-    {
-        question: "私の好きなサッカー選手はだれ？",
-        options: ["メッシ", "ネイマール", "スアレス", "イニエスタ", "ソンフンミン"],
-        answerIndex: 4
-    },
-    {
-        question: "私の好きなサッカー選手はだれ？",
-        options: ["メッシ", "ネイマール", "スアレス", "イニエスタ", "ソンフンミン"],
-        answerIndex: 4
     }
-
 ];
 
 export default quizData;
